@@ -50,7 +50,19 @@
           <h1 class="main-index-title">
             Эффективные решения<br />для вашего бизнеса
           </h1>
-          <button class="button-index" type="button">Заказать услугу</button>
+          <button class="button-index" type="button" data-modal-open>Заказать услугу</button>
+        </div>
+
+        <!--Modal window-->
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="button-modal"  type="button" data-modal-close>
+              <svg class="button-modal-icon">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+
+          </div>
         </div>
       </section>
 
@@ -110,12 +122,21 @@
           <ul class="work-list list">
             <li class="work-list-li">
               <img src="./images/programming.jpg" alt="Програмирование" width="370" height="294" />
+              <div class="work-list-description">
+                <p>Десктопные приложения</p> 
+              </div>
             </li>
             <li class="work-list-li">
               <img src="./images/devices.jpg" alt="Выбор девайса для будущего проэкта" width="370" height="294" />
+              <div class="work-list-description">
+                <p>Мобильные приложения</p> 
+              </div>
             </li>
             <li class="work-list-li">
               <img src="./images/design.jpg" alt="Современный дизайн будущего проэкта" width="370" height="294" />
+              <div class="work-list-description">
+                <p>Дизайнерские решения</p> 
+              </div>
             </li>
           </ul>
         </div>
@@ -328,5 +349,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
