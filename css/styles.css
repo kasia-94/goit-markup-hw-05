@@ -33,6 +33,12 @@ section {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -72,10 +78,6 @@ section {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-img {
-  display: block;
 }
 
 .portfolio-border {
@@ -138,7 +140,6 @@ img {
 
   position: absolute;
   bottom: 0;
-
 
   display: block;
   width: 100%;
